@@ -11,10 +11,10 @@ DEFAULT_DAMAGE = 10
 
     def attack(player)
       player.receive_damage
-      @hp -= 10
+      @hp -= DEFAULT_DAMAGE
     end
 
     def receive_damage
-      @hp -= 10
+      @hp -= DEFAULT_DAMAGE
     end
 end
