@@ -1,8 +1,5 @@
 require 'sinatra/base'
-require 'shotgun'
 require './lib/player'
-
-#set :session_secret, 'super secret'
 
 class Battle < Sinatra::Base
     enable :sessions
@@ -10,7 +7,7 @@ class Battle < Sinatra::Base
     get '/test' do
         "Testing infrastructure working!"
     end
-    # start the server if ruby file executed directly
+
     run! if app_file == $0
 
     get '/' do
