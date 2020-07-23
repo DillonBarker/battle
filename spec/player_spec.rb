@@ -1,8 +1,8 @@
 require 'player'
 
 describe Player do
-    subject(:harry_p) { Player.new("Harry P") }
-    subject(:voldie_m) { Player.new("Voldie M") }
+    subject(:harry_p) { Player.new("Harry P") } #player 1
+    subject(:voldie_m) { Player.new("Voldie M") } #player 2
 
     it 'returns the name' do
         expect(harry_p.name).to eq("Harry P")
